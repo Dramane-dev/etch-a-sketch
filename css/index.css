@@ -1,0 +1,76 @@
+:root {
+    --content-width: 600px;
+    --border-color: black;
+    --background-color: white;
+    --border-radius: 10px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--background-color);
+    font-family: 'Akaya Kanadaka', cursive;
+    background-image: url('../img/background.jpeg');
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container-wrapper {
+    padding: 2rem;
+}
+
+.container {
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    border: 5px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0 0  0 2px rgb(0,0,0),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.container > * {
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+}
+
+.size-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 15px;
+    background: red;
+}
+
+.reset {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid var(--background-color);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: black;
+    background-color: var(--background-color);
+}

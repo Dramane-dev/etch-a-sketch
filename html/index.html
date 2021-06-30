@@ -4,9 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" href="../css/index.css">
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+
         <title>ETCH-A-SKETCH</title>
     </head>
     <body>
-        
+        <div class="title">
+            <h1>ETCH A SKETCH</h1>
+        </div>
+        <div class="container-wrapper">
+            <div id="container" class="container"></div>
+
+            <div class="size-container">
+                <input type="range" value="16" min="1" max="100" id="size" class="progress-bar">
+            </div>
+            <div id="reset" class="reset">
+                <p>RESET</p>
+            </div>
+        </div>
+        <script type="module" src="../js/main.js"></script>
     </body>
 </html>
