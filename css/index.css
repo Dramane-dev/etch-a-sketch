@@ -15,6 +15,7 @@ body {
     color: var(--background-color);
     font-family: 'Akaya Kanadaka', cursive;
     background-image: url('../img/background.jpeg');
+    overflow: hidden;
 }
 
 .title {
@@ -59,7 +60,7 @@ body {
     background: red;
 }
 
-.reset {
+.reset, .multicolors {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,7 +71,7 @@ body {
     cursor: pointer;
 }
 
-.reset:hover {
+.reset:hover, .multicolors:hover {
     color: black;
     background-color: var(--background-color);
 }

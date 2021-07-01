@@ -15,6 +15,7 @@ export function createDiv(rows, columns) {
         let div = document.createElement('div');
         variables.container.appendChild(div);
     }
+    
     let divs = variables.container.querySelectorAll('div');
     divs.forEach(div => div.addEventListener('mouseover', changeColor));
 }
